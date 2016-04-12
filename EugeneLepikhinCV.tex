@@ -1,0 +1,118 @@
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% \moderncvstyle[grey]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{amsmath}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\AfterPreamble{
+  \hypersetup{colorlinks=false,linkbordercolor=red,linkcolor=green,pdfborderstyle={/S/U/W 1}}
+}
+
+% personal data
+\name{Evgenii}{Lepikhin}
+\email{johnlepikhin@gmail.com}                      % optional, remove the line if not wanted
+\social[linkedin]{evgenii-lepikhin-7b48b183}
+\social[github]{johnlepikhin}
+\extrainfo{last CV revision: Apr/12/2016}
+
+
+%\extrainfo{} % optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\phone{+7(926)146-23-36}                    % optional, remove the line if not wanted
+\photo[64pt]{me-1.eps}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+\makecvtitle
+
+\section{Experience}
+
+\cventry{2011--present}{Software engineer, Linux kernel hacker}{Web hosting company "1Gb"}{Russia, Moscow}{}{Linux kernel patches, system administrator of iSCSI target servers (clustered storage), developing hosting-specific antivirus / anti-fishing software, different types of automation on Perl, Bash and Ocaml}
+\cventry{2008--2011}{Systems architect, team leader}{ISPsystem LLC}{Russia, Irkutsk office}{}{Leader of ISPmanager Cluster developer team\newline Main languages: Ocaml, C++, Perl}
+\cventry{2007--2011}{Head of shared web hosting}{ISPsystem LLC}{Russia, Irkutsk office}{}{}
+\cventry{2004--2007}{Support team leader, leading specialist}{ISPsystem LLC}{Russia, Irkutsk office}{}{}
+\cventry{2003--2007}{Technical support, web developer (Perl)}{ISPsystem LLC}{Russia, Irkutsk office}{}{}
+
+\section{Research Experience}
+
+\cventry{June 2008-- December 2009}{Systems architect}{ISPsystem LLC}{Irkutsk office}{}{Development production ready clustered hosting solutions. Kernel hacking, fail-over related algorithms.}
+
+\section{Participation in conferences}
+
+\cventry{2010}{ISPsystem partner conference}{Moscow, Russia}{lecturer}{}{Talked about clustered web hosting, load balancing and fail-over HTTP/MySQL proxy server (it was named oProxy; I am the only developer) etc.}
+\cventry{2008}{HighLoad++}{Moscow, Russia}{conferee}{}{Developer Conference of highly loaded systems.}  % arguments 3 to 6 are optional
+
+\section{Certificates}
+
+\cventry{2006}{Linux system administration}{certifications.ru}{certified}{}{}
+\cventry{2006}{FreeBSD system administration}{certifications.ru}{certified}{}{}
+\cventry{2006}{TCP/IP administration}{certifications.ru}{certified}{}{}
+\cventry{2006}{ANSI SQL}{certifications.ru}{certified}{}{}
+\cventry{2006}{Perl programming}{certifications.ru}{certified}{}{}
+\cventry{2006}{HTML programming}{certifications.ru}{certified}{}{}
+\cventry{2003}{Linux administration}{brainbench.com}{4.5 out of 5}{}{Master level}
+
+\section{Languages}
+
+\cvlanguage{Russian}{native}{}
+\cvlanguage{English}{average}{Technical reading \& writing; moderate speaking skills}
+
+\section{Computer skills}
+
+\cvcomputer{OS}{FreeBSD, Debian GNU/Linux, Windows}{Programming languages}{Perl, Ocaml, C, C++, Bash}
+\cvcomputer{Web servers}{Apache 1.3, Apache 2, Nginx}{Databases}{MySQL 3/4/5, PostgreSQL, SQLite, Mongodb}
+\cvcomputer{Web development}{Perl, PHP, Ocsigen, JavaScript, CSS, XML+XSL templates, CGI, FastCGI}{Scientific software}{gnuplot, \LaTeX, Emacs}
+
+\section{Last completed engineering tasks}
+\cvline{Ocaml, 2016}{Next revision of antivirus/anti-fishing web hosting software: \href{https://github.com/johnlepikhin/auto_ss}{$\rightarrow$ GitHub}}
+\cvline{Perl+bash+Ocaml, 2015}{Launched Amazon S3 like cloud storage solution based on Skylable products + my scripts. \href{https://github.com/johnlepikhin/auto_sx-monitoring}{$\rightarrow$ a little piece of related FOSS}}
+\cvline{C, 2015}{Explore and fix Linux kernel panic in drivers/target/… branch}
+\cvline{C, 2014}{Advanced statistics and control for flashcache (Linux kernel module)}
+\cvline{ObjC, 2013}{Web hosting control panel for iOS}
+\cvline{Java+Ocaml, 2012}{Web hosting control panel for Android platform}
+\cvline{Ocaml, 2011}{Automatic virus scanner for web hosting servers.}
+\cvline{Ocaml, 2011}{Traffic counter based on libpcap. 20+ software-level protocols detected and parsed.}
+
+\section{Fields of Interest}
+
+\cvline{Computer science}{\small Algorithms, compilers theory}
+\cvline{$\lambda$}{\small Ocaml, camlp4, ppx}
+\cvline{High loaded solutions}{\small Map/reduce, non-relational databases}
+
+\section{Activities and Interests}
+
+\cvline{Sports}{\small Professional mountaineering guide (second occupation)}
+
+\section{Personal}
+
+\cvline{\textbf{Date of birth:}}{6 March, 1982}
+\cvline{\textbf{Nationality:}}{Russian}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
