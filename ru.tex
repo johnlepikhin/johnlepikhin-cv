@@ -1,16 +1,13 @@
 
 \documentclass[11pt,a4paper]{moderncv}
 
-% moderncv themes
-\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-% \moderncvstyle[grey]{classic}                % idem
+\moderncvtheme[blue]{casual}
 
-% character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
-\usepackage{amsmath}
-
 \usepackage[T1,T2A]{fontenc}
 \usepackage[english,russian]{babel}
+
+\usepackage{amsmath}
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -24,31 +21,25 @@
 
 \title{Руководитель группы, CTO}
 \name{Евгений}{Лепихин}
-\email{johnlepikhin@gmail.com}                      % optional, remove the line if not wanted
+\address{Бишкек, Киргизия / Москва, РФ}
+\email{johnlepikhin@gmail.com}
 \social[linkedin]{evgenii-lepikhin-7b48b183}
 \social[github]{johnlepikhin}
-\extrainfo{последнее обновление: 18 января 2023}
-
-
-%\extrainfo{} % optional, remove the line if not wanted
-%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
-
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
-
-
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
-\begin{document}
+\extrainfo{последнее обновление: 19 января 2023}
 \phone{+7(926)146-23-36 (Telegram, WhatsApp), +996 220 052 711}
 \photo[64pt]{me.eps}
+
+\begin{document}
 
 \makecvtitle
 
 \section{Кратко}
 
-Работаю в максимальной концентрации, но не готов просиживать штаны когда кончились силы или задачи. Готов просыпаться и работать ночью~---
-если это действительно необходимо.
+\subsection{Где работал}
+
+\cventry{2017--н.в.}{Руководитель группы}{VK (Mail.Ru)}{Организация dev-среды для разработчиков, автоматизация тестирования бэкенда}{}{}
+\cventry{2011--2017}{UNIX-специалист, программист}{1Gb.ru}{Разработка модулей в ядро Linux, антивируса для JS, ...}{}{}
+\cventry{2003--2011}{UNIX-специалист, руководитель}{ISPsystem LLC}{Разработка софта для хостинга, архитектор кластерного хостинга}{}{}
 
 \subsection{Что умею}
 
@@ -61,15 +52,10 @@
 \cvline{2021--2023}{Создание единой инфраструктуры обеспечения безопрасности внешних зависимостей (gomods, rust crates, python pip и т.д.) для сборок и рабочих станций разработчиков.}
 \cvline{2021--2022}{\href{https://github.com/mailru/shadowplay/}{Статический анализатор} для Puppet}
 
-\subsection{Текущие интересы}
-
-Формальная логика и системы доказательств корректности кода. С воодушевлением отношусь к большим системам, рефакторингу на уровне экосистемы.
-
 \subsection{Технологии}
 
 \cvline{Текущий стек}{UNIX (Linux), Rust}
-\cvline{В прошлом, языки}{C, C++, Java, Perl, Ocaml, Haskell, Elisp, Python}
-\cvline{В прошлом, системы}{FreeBSD, Opensolaris}
+\cvline{В прошлом}{C, C++, Java, Perl, Ocaml, Haskell, Elisp, Python, FreeBSD, Opensolaris}
 
 \subsection{Прочее}
 
@@ -77,7 +63,13 @@
 \cvline{Иностранные языки}{Английский: intermediate}
 \cvline{В жизни}{1982 г.р. Женат, двое детей. Проживаю за пределами РФ.}
 
+\pagebreak
+
 \section{В подробностях}
+
+\subsection{Текущие интересы}
+
+Формальная логика и системы доказательств корректности кода. С воодушевлением отношусь к большим системам, рефакторингу на уровне экосистемы.
 
 \subsection{Доступные инструменты и технологии}
 
