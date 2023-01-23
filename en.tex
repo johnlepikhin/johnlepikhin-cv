@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{casual}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{amsmath}
+
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+\AfterPreamble{
+  \hypersetup{linkbordercolor=red,linkcolor=green,pdfborderstyle={/S/U/W 1}}
+}
+
+\title{Team lead, software architect, developer, DevOps}
+\name{Evgenii}{Lepikhin}
+\address{Bishkek, Kyrgyzstan / Moscow, Russia}
+\email{johnlepikhin@gmail.com}
+\social[linkedin]{evgenii-lepikhin}
+\social[github]{johnlepikhin}
+\extrainfo{last update: Jan 2023}
+\fax{+7(926)146-23-36 (Telegram, WhatsApp)}
+\phone{+996 220 052 711}
+\photo[64pt]{me.eps}
+
+\begin{document}
+
+\makecvtitle
+
+\section{In short}
+
+\subsection{Experience}
+
+\cventry{2017--present}{Team lead}{VK (ex. Mail.Ru)}{Organization of a dev environment for developers and backend testing automation}{}{}
+\cventry{2011--2017}{Senior DevOps, developer}{1Gb.ru}{Linux kernel development, antivirus software for JS, etc.}{}{}
+\cventry{2003--2011}{Senior DevOps, team lead}{ISPsystem LLC}{High availability web hosting software development.}{}{}
+
+\subsection{Strengths}
+
+\cvline{Linux}{10+ years of experience in IT, thousands of hosts, participation in tasks from auto-deployment to writing kernel patches and building large scale systems.}
+
+\cvline{Backend development}{Architecture planning, development management, preparation of the product for the realities of operation.}
+
+\subsection{Recent key projects}
+
+\cvline{2019--2023}{Development from scratch ``Platform'' dev environment: a distributed and fault-tolerant system of reproducible builds, centralized ACL integrated with the corporate database, dependency management, running reproducible autotests in a cluster environment and hosting for environments of colleagues.}
+\cvline{2021--2023}{Developed a unified framework for securing external dependencies (gomods, rust crates, python pip, etc.) for builds and developer workstations.}
+\cvline{2021--2022}{\href{https://github.com/mailru/shadowplay/}{Static analyzer} for Puppet SCM}
+
+\subsection{Technologies}
+
+\cvline{Current stack}{Linux, Rust, Puppet}
+\cvline{In the past}{C, C++, Java, Perl, Ocaml, Haskell, Elisp, Python, FreeBSD, Opensolaris}
+
+\subsection{Miscellaneous}
+
+\cvline{Degree}{high school}
+\cvline{Languages}{English: intermediate, Russian: native}
+
+\pagebreak
+
+\section{In detail}
+
+\subsection{Current field of interest}
+
+Formal logic and software verification. I am enthusiastic about huge systems, refactoring, and building at the ecosystem level.
+
+\subsection{Technology stack and strengths}
+
+\cvline{Leading}{Pretty rich hiring experience: tons of interviews for developer, DevOps, and QA automation positions; created a system
+  of partial automation and objectification of hiring. Successful experience in managing projects with a complexity of thousands of
+  person-days. Passed a lot of courses from VK on management.}
+
+\cvline{Paradigms}{Good understanding of functional, declarative, and OOP styles.}
+
+\cvline{Async}{I can build cooperative multitasking from select () or epoll(), and then using promises (monads) create a DSL for more or
+  less convenient work with the event processing FSM.}
+
+\cvline{Computing}{I understand what map is and what reduce is, can assemble merge sort from them. I can distinguish hash from cache and
+  passing from parsing by eye. I know which recursions have a tail (and why it is good in programming), I also know how to make it so that a
+  non-tailed recursion finds it. I heard about Lamport's clock and distributed snapshots (in the context of studying
+  \href{https://coq.inria.fr}{Coq} tried to prove the correctness of distributed snapshots based on Lamport's clock).}
+
+\cvline{Language theory}{When writing parsers, DSLs, or learning new languages, I am well aware of the difference between a token, a
+  grammatical unit, an expression, and semantics. I understand that for the ultimate goal, the quality of the AST is more important than the
+  way brackets and indents are placed in a particular syntax.}
+
+\cvline{Memory algorithms}{Familiar with some algorithms for memory hierarchies. For quick editing of a linked list, I can create a sparse
+  array the size of a processor cache block. I understand why a loop over the values of a two-dimensional array in two ways will have
+  different performance. I am familiar with slabs in the Linux kernel, I understand when they are needed and how to create an allocator. I
+  know about memory barriers and why they are needed.}
+
+\cvline{Compiles}{I am familiar with and created static analyzers, translators, interpreters. I have no experience in creating compilers to
+  machine code.}
+
+\cvline{Linux environment}{Continuous experience since 2000. I mainly use Debian-based and RH-based distributions. My laptop is running
+  GuixSD. Automation of everything, deployment, operational search and problem-solving, infrastructure planning. Shell scripts, LAMP,
+  \href{https://it.lepikhin.site/post/selinux-howto/}{SELinux}, glusterfs, DRBD and dozens of other technologies. In the distant past, I
+  also actively worked with FreeBSD (everything except for the system kernel).}
+
+\cvline{Linux kernel}{Developed patches for internal use (mainly minor improvements to OpenVZ, added functionality to procfs/sysfs to get
+  statistics and control). I have some experience in developing modules. For one of the tasks, I digged deeply into the MM subsystem in
+  order to find the causes of mysterious memory destruction.}
+
+\cvline{VM}{Rich experience with qemu+kvm, OpenVZ and LXC. Administration of hosts with thousands of virtual machines in web hosting,
+  created a specialized hosting for developers. I have some experience with the OpenStack Compute and libvirt frameworks.}
+
+\renewcommand{\listitemsymbol}{-}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+\end{document}
