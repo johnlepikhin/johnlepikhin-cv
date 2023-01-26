@@ -3,7 +3,9 @@
 
 \moderncvtheme[blue]{casual}
 
-\PassOptionsToPackage{colorlinks=true}{hyperref}
+\definecolor{url}{rgb}{0.0, 0.44, 1.0}
+
+\PassOptionsToPackage{colorlinks=true,urlcolor=url,pdfborderstyle={/S/U/W 1}}{hyperref}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1,T2A]{fontenc}
@@ -13,10 +15,6 @@
 
 \usepackage[scale=0.8]{geometry}
 \AtBeginDocument{\recomputelengths}
-
-\AfterPreamble{
-  \hypersetup{linkbordercolor=red,linkcolor=green,pdfborderstyle={/S/U/W 1}}
-}
 
 \title{TechLead, архитектор}
 \name{Евгений}{Лепихин}
@@ -50,20 +48,22 @@
 
 \subsection{Последние ключевые проекты}
 
-\cvline{2019--2023}{Разработка с нуля и успешный запуск <<Платформы>> разработчиков: распределенной и отказоустойчивой системы воспроизводимых сборок проектов, централизованного управления доступами интегрированного с корпоративной базой сотрудников, управления зависимостями, запуска воспроизводимых автотестов в кластерной среде, хостинга (liblxc) для рабочих окружений коллег.}
-\cvline{2021--2023}{Создание единой инфраструктуры обеспечения безопрасности внешних зависимостей (gomods, rust crates, python pip и т.д.) для сборок и рабочих станций разработчиков.}
+\cvline{2019--2023}{Разработка с нуля и успешный запуск <<Платформы>> разработчиков: распределенной и отказоустойчивой системы
+  воспроизводимых сборок проектов, централизованного управления доступами интегрированного с корпоративной базой сотрудников, управления
+  зависимостями, запуска воспроизводимых автотестов в кластерной среде, хостинга (liblxc) для рабочих окружений коллег. Сборка порядка 300
+  проектов, до 500 сборок в сутки, около 400 пользователей.}
+
+\cvline{2021--2023}{Создание единой инфраструктуры обеспечения безопрасности внешних зависимостей (gomods, rust crates, python pip и т.д.)
+  для сборок и рабочих станций разработчиков.}
+
 \cvline{2021--2022}{\href{https://github.com/mailru/shadowplay/}{Статический анализатор} для Puppet}
 
 \subsection{Технологии}
 
-\cvline{Плотно работал}{Linux, Rust, Puppet, C, C++, Java, Perl, Ocaml, Haskell, Elisp, Python, FreeBSD, Opensolaris, Grafana, Prometheus,
-  NAS, DRDB, MySQL, PostgreSQL, технологии шардирования, естественные языки, парсинг ЯП}
+\cvline{Ключевые навыки}{Linux на уровне SRE, senior разработчик Rust, DevOps, эксперт Puppet}
 
-\subsection{Прочее}
-
-\cvline{Образование}{Среднее}
-\cvline{Иностранные языки}{Английский: intermediate}
-\cvline{В жизни}{1982 г.р. Женат, двое детей. Проживаю за пределами РФ.}
+\cvline{Плотно работал}{C, C++, Java, Perl, Ocaml, Haskell, Elisp, Python, FreeBSD, Opensolaris, Grafana, Prometheus, NAS, DRDB, MySQL,
+  PostgreSQL, технологии шардирования, естественные языки, парсинг ЯП}
 
 \pagebreak
 
@@ -126,6 +126,12 @@
 
 \cvline{От организации времени}{Свободный график, возможность раз в 1-2 года брать неоплачиваемый отпуск на 20-30 дней: занимаюсь
   экспедиционным альпинизмом и 28 дней на поездку обычно не хватает.}
+
+\subsection{Прочее}
+
+\cvline{Иностранные языки}{Английский: intermediate}
+\cvline{В жизни}{1982 г.р. Женат, двое детей. Проживаю за пределами РФ.}
+
 
 \renewcommand{\listitemsymbol}{-}
 

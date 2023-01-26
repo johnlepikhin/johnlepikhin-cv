@@ -1,6 +1,11 @@
+
 \documentclass[11pt,a4paper]{moderncv}
 
 \moderncvtheme[blue]{casual}
+
+\definecolor{url}{rgb}{0.0, 0.44, 1.0}
+
+\PassOptionsToPackage{colorlinks=true,urlcolor=url,pdfborderstyle={/S/U/W 1}}{hyperref}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1,T2A]{fontenc}
@@ -10,10 +15,6 @@
 
 \usepackage[scale=0.8]{geometry}
 \AtBeginDocument{\recomputelengths}
-
-\AfterPreamble{
-  \hypersetup{linkbordercolor=red,linkcolor=green,pdfborderstyle={/S/U/W 1}}
-}
 
 \title{TechLead, software architect, developer, DevOps}
 \name{Evgenii}{Lepikhin}
