@@ -15,3 +15,6 @@ en: clean
 	bibtex en
 	pdflatex en
 	pdflatex en
+
+release:
+	git tag v$(convco version -b)
