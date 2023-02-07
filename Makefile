@@ -17,4 +17,4 @@ en: clean
 	pdflatex en
 
 release:
-	@git tag v$(convco version -b)
+	git tag v`convco version -b`
