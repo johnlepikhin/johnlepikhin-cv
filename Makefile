@@ -1,14 +1,20 @@
 
 all: ru en
 
-ru:
+clean:
+	rm -f *.aux *.pdf *.out *.log *.bbl *.blg *.bcf
+
+ru: clean
 	pdflatex ru
 	bibtex ru
 	pdflatex ru
 	pdflatex ru
 
-en:
+en: clean
 	pdflatex en
 	bibtex en
 	pdflatex en
 	pdflatex en
+
+release:
+	git tag v`convco version -b`
